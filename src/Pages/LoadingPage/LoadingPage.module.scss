@@ -6,7 +6,7 @@
 .wrapper {
 	position: fixed;
 	inset: 0;
-	background-color: #fff;
+	background-color: $bg-light;
 
 	display: flex;
 	flex-direction: column;
@@ -15,10 +15,9 @@
 
 	z-index: 10000;
 
-
 	overflow: hidden;
 
-	animation: bg $loader-animation ;
+	animation: bg $loader-time;
 
 	perspective: 2000px;
 }
@@ -31,27 +30,27 @@ h2 {
 }
 
 .title_1 {
-	animation: title_1 $loader-animation;
+	animation: title_1 $loader-time;
 }
 
 .title_2 {
-	animation: title_2 $loader-animation;
+	animation: title_2 $loader-time;
 }
 
 .title_3 {
-	animation: title_3 $loader-animation;
+	animation: title_3 $loader-time;
 }
 
 .title_4 {
-	animation: title_4 $loader-animation;
+	animation: title_4 $loader-time;
 }
 
 .title_5 {
-	animation: title_5 $loader-animation;
+	animation: title_5 $loader-time;
 }
 
 .title_6 {
-	animation: title_6 $loader-animation;
+	animation: title_6 $loader-time;
 }
 
 .title_3,
@@ -291,39 +290,21 @@ h2 {
 
 @keyframes bg {
 	0% {
-		background-color: white;
+		background-color: $bg-light;
 	}
 
 	49% {
-		background-color: white;
+		background-color: $bg-light;
 	}
 
 	50% {
 		background-color: black;
 	}
+	70% {
+		background-color: black;
+	}
 
 	100% {
-		background-color: black;
-
-	}
-}
-
-@keyframes fadeIn {
-	from {
-		opacity: 1;
-	}
-
-	to {
-		opacity: 0;
-	}
-}
-
-@keyframes fadeOut {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
+		background-color: transparent;
 	}
 }
