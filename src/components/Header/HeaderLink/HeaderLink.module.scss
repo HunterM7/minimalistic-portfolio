@@ -1,0 +1,16 @@
+//? === Header Link ===
+@import '../../../scss/vars';
+
+.link {
+}
+
+.link {
+	font-family: 'Monument Extended', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: $white;
+
+	@include noselect;
+
+	padding: 4px;
+}

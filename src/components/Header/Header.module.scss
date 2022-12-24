@@ -1,0 +1,19 @@
+//? === Header ===
+@import '../../scss/vars';
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	column-gap: 18px;
+
+	width: 100%;
+	max-width: $max-width;
+
+	position: fixed;
+	top: 44px;
+	margin: 0 auto;
+
+	z-index: 1000;
+}

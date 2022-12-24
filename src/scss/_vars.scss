@@ -2,6 +2,23 @@
 
 $loader-time: 4.2s;
 $size-index: calc(1vw + 1vh);
+$max-width: 1180px;
 
 // Colors
-$bg-light: #f7f0e2;
+$black: #000;
+$white: #fff;
+
+$bg-light: #f5efe0;
+
+// Transition
+$trans-medium: 0.8s cubic-bezier(0.4, 0.23, 0, 1);
+
+// Mixins
+@mixin noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* IE / Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}

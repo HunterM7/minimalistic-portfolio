@@ -13,50 +13,45 @@
 	justify-content: center;
 	align-items: center;
 
-	z-index: 10000;
+	animation: bg $loader-time;
+	perspective: 2000px;
 
+	user-select: none;
+	cursor: default;
 	overflow: hidden;
 
-	animation: bg $loader-time;
-
-	perspective: 2000px;
+	z-index: 10000;
 }
 
-h2 {
+.title {
 	font-family: 'Monument Extended';
 	font-size: calc($size-index * 3);
 	white-space: nowrap;
-	color: black;
-}
+	color: $black;
 
-.title_1 {
-	animation: title_1 $loader-time;
-}
+	&--1 {
+		animation: title_1 $loader-time;
+	}
+	&--2 {
+		animation: title_2 $loader-time;
+	}
+	&--3 {
+		animation: title_3 $loader-time;
+	}
+	&--4 {
+		animation: title_4 $loader-time;
+	}
+	&--5 {
+		animation: title_5 $loader-time;
+	}
+	&--6 {
+		animation: title_6 $loader-time;
+	}
 
-.title_2 {
-	animation: title_2 $loader-time;
-}
-
-.title_3 {
-	animation: title_3 $loader-time;
-}
-
-.title_4 {
-	animation: title_4 $loader-time;
-}
-
-.title_5 {
-	animation: title_5 $loader-time;
-}
-
-.title_6 {
-	animation: title_6 $loader-time;
-}
-
-.title_3,
-.title_4 {
-	-webkit-text-stroke: 1px black;
-	color: transparent;
+	&--stroke {
+		-webkit-text-stroke: 1px $black;
+		color: transparent;
+	}
 }
 
 @keyframes title_1 {
@@ -81,11 +76,11 @@ h2 {
 	}
 
 	49% {
-		color: black;
+		color: $black;
 	}
 
 	50% {
-		color: white;
+		color: $bg-light;
 	}
 
 	60% {
@@ -94,7 +89,7 @@ h2 {
 
 	100% {
 		transform: translateZ(2800px);
-		color: white;
+		color: $bg-light;
 	}
 }
 
@@ -298,13 +293,13 @@ h2 {
 	}
 
 	50% {
-		background-color: black;
+		background-color: $black;
 	}
 	70% {
-		background-color: black;
+		background-color: $black;
 	}
 
 	100% {
-		background-color: transparent;
+		background-color: $black;
 	}
 }

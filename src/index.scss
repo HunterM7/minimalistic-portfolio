@@ -2,22 +2,25 @@
 @import 'scss/fonts';
 @import 'scss/vars';
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-		'Droid Sans', 'Helvetica Neue', sans-serif;
+	font-family: 'Univia Pro', sans-serif;
+
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	background-color: $black;
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas,
-		'Courier New', monospace;
+h2 {
+	font-family: 'Monument Extended', sans-serif;
+	font-size: 86px;
+	font-weight: 400;
+	color: $white;
+}
+
+.container {
+	max-width: $max-width;
+	margin: 0 auto;
+
+	position: relative;
 }

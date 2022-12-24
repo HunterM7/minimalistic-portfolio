@@ -1,12 +1,9 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-
-// Files
-import './App.scss'
 
 // Components
-import MainComponent from './components/MainComponent'
 import LoadingPage from './Pages/LoadingPage/LoadingPage'
+import Home from './Pages/Home/Home'
+import Header from './components/Header/Header'
 
 function App() {
 	// Loader
@@ -15,19 +12,20 @@ function App() {
 	React.useEffect(() => {
 		setTimeout(() => {
 			setIsLoading(false)
-		}, 4100)
+		}, 3600)
 	}, [])
 
 	return (
-		<div className='App'>
-			{isLoading && (
+		<>
+			{isLoading ? (
 				<LoadingPage title='the minimum is my religion' />
+			) : (
+				<div className='container'>
+					<Header />
+					<Home />
+				</div>
 			)}
-
-			<Routes>
-				<Route path='/' element={<MainComponent />} />
-			</Routes>
-		</div>
+		</>
 	)
 }
 
