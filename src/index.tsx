@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom/client'
 import 'scss/index.scss'
 
 // Components
-import App from './App'
+import { App } from 'components'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(

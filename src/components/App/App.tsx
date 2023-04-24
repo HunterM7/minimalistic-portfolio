@@ -6,6 +6,9 @@ import { HomePage, LoadingPage } from 'pages'
 // Components
 import { Header } from 'components'
 
+// Styles
+import styles from './App.module.scss'
+
 function App() {
   // Loader
   const [isLoading, setIsLoading] = React.useState(true)
@@ -26,6 +29,8 @@ function App() {
           <HomePage />
         </>
       )}
+
+      <div className={styles.noiseBG}></div>
     </>
   )
 }

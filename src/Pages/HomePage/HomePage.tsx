@@ -4,7 +4,12 @@ import React from 'react'
 import { homepageBlocks } from 'utils/constants'
 
 // Components
-import { HeroSection } from 'components'
+import {
+  HeroSection,
+  WorksSection,
+  AwardsSection,
+  ContactsSection,
+} from 'components'
 
 // Styles
 import styles from './HomePage.module.scss'
@@ -12,19 +17,14 @@ import styles from './HomePage.module.scss'
 const HomePage: React.FC = () => {
   return (
     <main className={styles.main}>
-      <HeroSection />
+      <div className={styles.container}>
+        <HeroSection />
 
-      <div id={homepageBlocks[0].link} className={styles.bigbox}>
-        box1
-      </div>
-      <div id={homepageBlocks[1].link} className={styles.bigbox}>
-        box2
-      </div>
-      <div id={homepageBlocks[2].link} className={styles.bigbox}>
-        box3
-      </div>
-      <div id="box-4" className={styles.bigbox}>
-        box4
+        <WorksSection id={homepageBlocks[0].link} />
+
+        <AwardsSection id={homepageBlocks[1].link} />
+
+        <ContactsSection id={homepageBlocks[2].link} />
       </div>
     </main>
   )

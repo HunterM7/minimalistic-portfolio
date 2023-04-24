@@ -3,21 +3,10 @@
 @import 'scss/vars';
 
 .main {
+	position: relative;
+}
+
+.container {
 	@include container;
 }
 
-
-
-// --- --- --- --- --- --- --- ---
-.bigbox {
-	width: 100%;
-	height: 100vh;
-
-	top: -250px;
-
-	color: gray;
-
-	&:nth-child(odd) {
-		background-color: white;
-	}
-}
