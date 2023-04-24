@@ -16,4 +16,14 @@
 	margin: 0 auto;
 
 	z-index: 1000;
+	animation: trans $trans-medium;
+}
+
+@keyframes trans {
+	from {
+		transform: translateY(-420%);
+	}
+	to {
+		transform: translateY(0%);
+	}
 }

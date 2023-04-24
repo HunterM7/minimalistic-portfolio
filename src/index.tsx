@@ -1,14 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-// Files
+// Files & Data
 import './index.scss'
 
 // Components
 import App from './App'
 
 const root = ReactDOM.createRoot(
-	document.getElementById('root'),
+	document.getElementById('root') as HTMLElement,
 )
 root.render(
 	<React.StrictMode>

@@ -1,7 +1,7 @@
 //? === Header Link ===
 @import '../../../scss/vars';
 
-.link {
+.wrapper {
 }
 
 .link {
@@ -13,4 +13,12 @@
 	@include noselect;
 
 	padding: 4px;
+
+	cursor: pointer;
+
+	transition: color $trans-medium;
+
+	&.active {
+		color: red;
+	}
 }

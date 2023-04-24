@@ -8,9 +8,9 @@ import HeaderLink from './HeaderLink/HeaderLink'
 
 const Header = () => {
 	const links = [
-		{ title: 'work', link: '#work' },
-		{ title: 'awards', link: '#awards' },
-		{ title: 'contact me', link: '#contact-me' },
+		{ title: 'work', link: 'work' },
+		{ title: 'awards', link: 'awards' },
+		{ title: 'contact me', link: 'contact-me' },
 	]
 
 	return (

@@ -1,13 +1,23 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 import styles from './HeaderLink.module.scss'
 
 const HeaderLink = ({ title, link }) => {
 	return (
 		<li className={styles.wrapper}>
-			<a href={link} className={styles.link}>
+			<Link
+				to={link}
+				spy={true}
+				smooth={true}
+				offset={-50}
+				duration={500}
+				className={styles.link}
+				activeClass={styles.active}
+				// onSetActive={this.handleSetActive}
+			>
 				{title}
-			</a>
+			</Link>
 		</li>
 	)
 }

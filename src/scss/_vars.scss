@@ -12,6 +12,7 @@ $bg-light: #f5efe0;
 
 // Transition
 $trans-medium: 0.8s cubic-bezier(0.4, 0.23, 0, 1);
+$cubic: cubic-bezier(0.4, 0.23, 0, 1);
 
 // Mixins
 @mixin noselect {
