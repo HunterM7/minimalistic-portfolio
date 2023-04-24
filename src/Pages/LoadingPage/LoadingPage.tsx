@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 
-import styles from './LoadingPage.module.scss'
+// Components
 import LoadingHeading from './LoadingHeading/LoadingHeading'
+
+// Styles
+import styles from './LoadingPage.module.scss'
 
 interface ILoadingPage {
   title: string
@@ -9,19 +12,19 @@ interface ILoadingPage {
 
 const LoadingPage: React.FC<ILoadingPage> = ({ title }) => {
   return (
-    <div className={styles.wrapper}>
-      <LoadingHeading title={title} classNames={[styles['title--6']]} />
-      <LoadingHeading title={title} classNames={[styles['title--5']]} />
-      <LoadingHeading title={title} classNames={[styles['title--4']]} stroked />
-      <LoadingHeading title={title} classNames={[styles['title--3']]} stroked />
-      <LoadingHeading title={title} classNames={[styles['title--2']]} />
-      <LoadingHeading title={title} classNames={[styles['title--1']]} />
-      <LoadingHeading title={title} classNames={[styles['title--2']]} />
-      <LoadingHeading title={title} classNames={[styles['title--3']]} stroked />
-      <LoadingHeading title={title} classNames={[styles['title--4']]} stroked />
-      <LoadingHeading title={title} classNames={[styles['title--5']]} />
-      <LoadingHeading title={title} classNames={[styles['title--6']]} />
-    </div>
+    <section className={styles.wrapper}>
+      <LoadingHeading title={title} classNames={[styles.text_6]} />
+      <LoadingHeading title={title} classNames={[styles.text_5]} />
+      <LoadingHeading title={title} classNames={[styles.text_4]} stroked />
+      <LoadingHeading title={title} classNames={[styles.text_3]} stroked />
+      <LoadingHeading title={title} classNames={[styles.text_2]} />
+      <LoadingHeading title={title} classNames={[styles.text_1]} />
+      <LoadingHeading title={title} classNames={[styles.text_2]} />
+      <LoadingHeading title={title} classNames={[styles.text_3]} stroked />
+      <LoadingHeading title={title} classNames={[styles.text_4]} stroked />
+      <LoadingHeading title={title} classNames={[styles.text_5]} />
+      <LoadingHeading title={title} classNames={[styles.text_6]} />
+    </section>
   )
 }
 

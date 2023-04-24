@@ -14,17 +14,19 @@ const Header = () => {
   ]
 
   return (
-    <ul className={`container ${styles.wrapper}`}>
-      {links.map(item => {
-        return (
-          <HeaderLink
-            title={item.title}
-            link={item.link}
-            key={`headerlink ${item.title}`}
-          />
-        )
-      })}
-    </ul>
+    <header className="container">
+      <ul className={`container ${styles.wrapper}`}>
+        {links.map(item => {
+          return (
+            <HeaderLink
+              title={item.title}
+              link={item.link}
+              key={`headerlink ${item.title}`}
+            />
+          )
+        })}
+      </ul>
+    </header>
   )
 }
 

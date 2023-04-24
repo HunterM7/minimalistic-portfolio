@@ -1,7 +1,6 @@
 //? === Loading Page ===
 
-@import '../../scss/vars';
-@import '../../scss/fonts';
+@import 'scss/vars';
 
 .wrapper {
 	position: fixed;
@@ -19,32 +18,30 @@
 	user-select: none;
 	cursor: default;
 	overflow: hidden;
-
-	z-index: 10000;
 }
 
-.title {
-	&--1 {
-		animation: title_1 $loader-time;
+.text {
+	&_1 {
+		animation: animation_1 $loader-time;
 	}
-	&--2 {
-		animation: title_2 $loader-time;
+	&_2 {
+		animation: animation_2 $loader-time;
 	}
-	&--3 {
-		animation: title_3 $loader-time;
+	&_3 {
+		animation: animation_3 $loader-time;
 	}
-	&--4 {
-		animation: title_4 $loader-time;
+	&_4 {
+		animation: animation_4 $loader-time;
 	}
-	&--5 {
-		animation: title_5 $loader-time;
+	&_5 {
+		animation: animation_5 $loader-time;
 	}
-	&--6 {
-		animation: title_6 $loader-time;
+	&_6 {
+		animation: animation_6 $loader-time;
 	}
 }
 
-@keyframes title_1 {
+@keyframes animation_1 {
 	0% {
 		opacity: 1;
 	}
@@ -83,7 +80,7 @@
 	}
 }
 
-@keyframes title_2 {
+@keyframes animation_2 {
 	0% {
 		opacity: 1;
 	}
@@ -117,7 +114,7 @@
 	}
 }
 
-@keyframes title_3 {
+@keyframes animation_3 {
 	0% {
 		opacity: 1;
 	}
@@ -151,7 +148,7 @@
 	}
 }
 
-@keyframes title_4 {
+@keyframes animation_4 {
 	0% {
 		opacity: 0;
 	}
@@ -189,7 +186,7 @@
 	}
 }
 
-@keyframes title_5 {
+@keyframes animation_5 {
 	0% {
 		opacity: 0;
 	}
@@ -231,7 +228,7 @@
 	}
 }
 
-@keyframes title_6 {
+@keyframes animation_6 {
 	0% {
 		opacity: 0;
 	}

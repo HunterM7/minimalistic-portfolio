@@ -1,11 +1,14 @@
 import React from 'react'
 
+// Assets
+import { arrowBig } from 'assets/icons'
+
+// Styles
 import styles from './HomePage.module.scss'
-import { arrowBig } from '../../assets/icons'
 
 const HomePage = () => {
   return (
-    <div className={styles.container}>
+    <main className="container">
       <div className={styles.herobox}>
         <h2 className={styles.herobox__title}>
           <span>Hello.</span>
@@ -37,7 +40,7 @@ const HomePage = () => {
       <div id="box4" className={styles.bigbox}>
         box4
       </div>
-    </div>
+    </main>
   )
 }
 

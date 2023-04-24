@@ -21,10 +21,10 @@ function App() {
       {isLoading ? (
         <LoadingPage title="the minimum is my religion" />
       ) : (
-        <div className="container">
+        <>
           <Header />
           <HomePage />
-        </div>
+        </>
       )}
     </>
   )

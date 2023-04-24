@@ -2,13 +2,10 @@
 
 @import '../../scss/vars';
 
-.container {
-	padding-top: 46px;
-}
-
 .herobox {
 	width: 100%;
 	max-width: 700px;
+	padding-top: 46px;
 
 	display: flex;
 	flex-direction: column;
