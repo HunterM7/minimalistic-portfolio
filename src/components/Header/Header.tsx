@@ -1,5 +1,8 @@
 import React from 'react'
 
+// Utils
+import { homepageBlocks } from 'utils/constants'
+
 // Components
 import { HeaderLink } from 'components'
 
@@ -7,25 +10,13 @@ import { HeaderLink } from 'components'
 import styles from './Header.module.scss'
 
 const Header = () => {
-  const links = [
-    { title: 'work', link: 'work' },
-    { title: 'awards', link: 'awards' },
-    { title: 'contact me', link: 'contact-me' },
-  ]
+  const headerLinks = homepageBlocks.map(item => (
+    <HeaderLink title={item.title} link={item.link} key={item.link} />
+  ))
 
   return (
-    <header className="container">
-      <ul className={`container ${styles.wrapper}`}>
-        {links.map(item => {
-          return (
-            <HeaderLink
-              title={item.title}
-              link={item.link}
-              key={`headerlink ${item.title}`}
-            />
-          )
-        })}
-      </ul>
+    <header className={styles.header}>
+      <nav className={styles.nav}>{headerLinks}</nav>
     </header>
   )
 }

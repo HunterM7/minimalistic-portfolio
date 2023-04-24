@@ -8,7 +8,7 @@ import { Header } from 'components'
 
 function App() {
   // Loader
-  const [isLoading, setIsLoading] = React.useState<boolean>(true)
+  const [isLoading, setIsLoading] = React.useState(true)
 
   React.useEffect(() => {
     setTimeout(() => {

@@ -1,8 +1,5 @@
 //? === Header Link ===
-@import '../../../scss/vars';
-
-.wrapper {
-}
+@import 'scss/vars';
 
 .link {
 	font-family: 'Monument Extended', sans-serif;
@@ -19,6 +16,10 @@
 	transition: color $trans-medium;
 
 	&.active {
-		color: red;
+		color: $primary-color;
+	}
+
+	&:hover {
+		color: $primary-color;
 	}
 }

@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 
 // Components
 import LoadingHeading from './LoadingHeading/LoadingHeading'

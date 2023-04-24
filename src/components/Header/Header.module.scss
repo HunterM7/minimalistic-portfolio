@@ -1,22 +1,28 @@
 //? === Header ===
-@import '../../scss/vars';
+@import 'scss/vars';
 
-.wrapper {
+.header {
+	width: 100%;
+
+	padding: 30px 0 16px;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+
+	animation: trans $trans-medium;
+}
+
+.nav {
+	@include container;
+
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
 	column-gap: 18px;
-
-	width: 100%;
-	max-width: $max-width;
-
-	position: fixed;
-	top: 44px;
-	margin: 0 auto;
-
-	z-index: 1000;
-	animation: trans $trans-medium;
 }
 
 @keyframes trans {
