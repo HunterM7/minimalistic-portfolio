@@ -1,9 +1,10 @@
 import React from 'react'
 
+// Pages
+import { HomePage, LoadingPage } from 'pages'
+
 // Components
-import LoadingPage from './pages/LoadingPage/LoadingPage'
-import Home from './pages/Home/Home'
-import Header from './components/Header/Header'
+import { Header } from 'components'
 
 function App() {
   // Loader
@@ -22,7 +23,7 @@ function App() {
       ) : (
         <div className="container">
           <Header />
-          <Home />
+          <HomePage />
         </div>
       )}
     </>

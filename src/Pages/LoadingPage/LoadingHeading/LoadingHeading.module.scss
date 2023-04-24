@@ -1,0 +1,15 @@
+//? === Loading Heading ===
+
+@import 'scss/vars';
+
+.title {
+	font-family: 'Monument Extended';
+	font-size: calc($size-index * 3);
+	white-space: nowrap;
+	color: $black;
+}
+
+.stroked {
+	-webkit-text-stroke: 1px $black;
+	color: transparent;
+}
