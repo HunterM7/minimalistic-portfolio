@@ -26,6 +26,8 @@ const HomePage: React.FC = () => {
 
         <ContactsSection id={homepageBlocks[2].link} />
       </div>
+
+      <div className={styles.noiseBG}></div>
     </main>
   )
 }

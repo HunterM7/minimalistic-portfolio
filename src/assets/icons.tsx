@@ -21,7 +21,7 @@ export const noiseBG = (
     viewBox="0 0 700 700"
     width="700"
     height="700"
-    opacity="1"
+    opacity="0.3"
   >
     <defs>
       <filter
@@ -35,8 +35,8 @@ export const noiseBG = (
         colorInterpolationFilters="linearRGB"
       >
         <feTurbulence
-          type="fractalNoise"
-          baseFrequency="0.114"
+          type="turbulence"
+          baseFrequency="0.051"
           numOctaves="4"
           seed="15"
           stitchTiles="stitch"
@@ -47,10 +47,10 @@ export const noiseBG = (
           result="turbulence"
         ></feTurbulence>
         <feSpecularLighting
-          surfaceScale="27"
-          specularConstant="0.75"
+          surfaceScale="28"
+          specularConstant="0.7"
           specularExponent="20"
-          lightingColor="#8c8c8c"
+          lightingColor="#ffffff"
           x="0%"
           y="0%"
           width="100%"
@@ -58,7 +58,7 @@ export const noiseBG = (
           in="turbulence"
           result="specularLighting"
         >
-          <feDistantLight azimuth="3" elevation="119"></feDistantLight>
+          <feDistantLight azimuth="3" elevation="83"></feDistantLight>
         </feSpecularLighting>
       </filter>
     </defs>
@@ -66,7 +66,7 @@ export const noiseBG = (
     <rect
       width="700"
       height="700"
-      fill="#8c8c8c"
+      fill="#ffffff"
       filter="url(#nnnoise-filter)"
     ></rect>
   </svg>

@@ -29,8 +29,6 @@ function App() {
           <HomePage />
         </>
       )}
-
-      <div className={styles.noiseBG}></div>
     </>
   )
 }

@@ -1,55 +1,57 @@
 <svg
-    xmlns="http://www.w3.org/2000/svg"
-    version="1.1"
-    viewBox="0 0 700 700"
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.dev/svgjs"
+  viewBox="0 0 700 700"
+  width="700"
+  height="700"
+  opacity="0.3"
+>
+  <defs>
+    <filter
+      id="nnnoise-filter"
+      x="-20%"
+      y="-20%"
+      width="140%"
+      height="140%"
+      filterUnits="objectBoundingBox"
+      primitiveUnits="userSpaceOnUse"
+      color-interpolation-filters="linearRGB"
+    >
+      <feTurbulence
+        type="turbulence"
+        baseFrequency="0.051"
+        numOctaves="4"
+        seed="15"
+        stitchTiles="stitch"
+        x="0%"
+        y="0%"
+        width="100%"
+        height="100%"
+        result="turbulence"
+      ></feTurbulence>
+      <feSpecularLighting
+        surfaceScale="28"
+        specularConstant="0.7"
+        specularExponent="20"
+        lighting-color="#ffffff"
+        x="0%"
+        y="0%"
+        width="100%"
+        height="100%"
+        in="turbulence"
+        result="specularLighting"
+      >
+        <feDistantLight azimuth="3" elevation="83"></feDistantLight>
+      </feSpecularLighting>
+    </filter>
+  </defs>
+  <rect width="700" height="700" fill="transparent"></rect>
+  <rect
     width="700"
     height="700"
-    opacity="1"
-  >
-    <defs>
-      <filter
-        id="nnnoise-filter"
-        x="-20%"
-        y="-20%"
-        width="140%"
-        height="140%"
-        filterUnits="objectBoundingBox"
-        primitiveUnits="userSpaceOnUse"
-        colorInterpolationFilters="linearRGB"
-      >
-        <feTurbulence
-          type="fractalNoise"
-          baseFrequency="0.114"
-          numOctaves="4"
-          seed="15"
-          stitchTiles="stitch"
-          x="0%"
-          y="0%"
-          width="100%"
-          height="100%"
-          result="turbulence"
-        ></feTurbulence>
-        <feSpecularLighting
-          surfaceScale="27"
-          specularConstant="0.75"
-          specularExponent="20"
-          lightingColor="#8c8c8c"
-          x="0%"
-          y="0%"
-          width="100%"
-          height="100%"
-          in="turbulence"
-          result="specularLighting"
-        >
-          <feDistantLight azimuth="3" elevation="119"></feDistantLight>
-        </feSpecularLighting>
-      </filter>
-    </defs>
-    <rect width="700" height="700" fill="transparent"></rect>
-    <rect
-      width="700"
-      height="700"
-      fill="#8c8c8c"
-      filter="url(#nnnoise-filter)"
-    ></rect>
-  </svg>
+    fill="#ffffff"
+    filter="url(#nnnoise-filter)"
+  ></rect>
+</svg>
